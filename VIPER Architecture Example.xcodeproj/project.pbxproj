@@ -10,9 +10,13 @@
 		445B8E682625B2A900784BBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B8E672625B2A900784BBC /* AppDelegate.swift */; };
 		445B8E6A2625B2A900784BBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B8E692625B2A900784BBC /* SceneDelegate.swift */; };
 		445B8E6C2625B2A900784BBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B8E6B2625B2A900784BBC /* ViewController.swift */; };
-		445B8E6F2625B2A900784BBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445B8E6D2625B2A900784BBC /* Main.storyboard */; };
 		445B8E712625B2AC00784BBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 445B8E702625B2AC00784BBC /* Assets.xcassets */; };
 		445B8E742625B2AC00784BBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445B8E722625B2AC00784BBC /* LaunchScreen.storyboard */; };
+		445B8E832625B42000784BBC /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B8E822625B42000784BBC /* View.swift */; };
+		445B8E872625B42800784BBC /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B8E862625B42800784BBC /* Interactor.swift */; };
+		445B8E8A2625B43400784BBC /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B8E892625B43400784BBC /* Presenter.swift */; };
+		445B8E8D2625B43C00784BBC /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B8E8C2625B43C00784BBC /* Entity.swift */; };
+		445B8E902625B44600784BBC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B8E8F2625B44600784BBC /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +24,14 @@
 		445B8E672625B2A900784BBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		445B8E692625B2A900784BBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		445B8E6B2625B2A900784BBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		445B8E6E2625B2A900784BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		445B8E702625B2AC00784BBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		445B8E732625B2AC00784BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		445B8E752625B2AC00784BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		445B8E822625B42000784BBC /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		445B8E862625B42800784BBC /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		445B8E892625B43400784BBC /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		445B8E8C2625B43C00784BBC /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		445B8E8F2625B44600784BBC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		445B8E662625B2A900784BBC /* VIPER Architecture Example */ = {
 			isa = PBXGroup;
 			children = (
+				445B8E812625B40D00784BBC /* Router */,
+				445B8E802625B40300784BBC /* Entity */,
+				445B8E7F2625B3FD00784BBC /* Presenter */,
+				445B8E7D2625B3F100784BBC /* Interactor */,
+				445B8E7C2625B3EB00784BBC /* View */,
 				445B8E672625B2A900784BBC /* AppDelegate.swift */,
 				445B8E692625B2A900784BBC /* SceneDelegate.swift */,
 				445B8E6B2625B2A900784BBC /* ViewController.swift */,
-				445B8E6D2625B2A900784BBC /* Main.storyboard */,
 				445B8E702625B2AC00784BBC /* Assets.xcassets */,
 				445B8E722625B2AC00784BBC /* LaunchScreen.storyboard */,
 				445B8E752625B2AC00784BBC /* Info.plist */,
 			);
 			path = "VIPER Architecture Example";
+			sourceTree = "<group>";
+		};
+		445B8E7C2625B3EB00784BBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				445B8E822625B42000784BBC /* View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		445B8E7D2625B3F100784BBC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				445B8E862625B42800784BBC /* Interactor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		445B8E7F2625B3FD00784BBC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				445B8E892625B43400784BBC /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		445B8E802625B40300784BBC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				445B8E8C2625B43C00784BBC /* Entity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		445B8E812625B40D00784BBC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				445B8E8F2625B44600784BBC /* Router.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +178,6 @@
 			files = (
 				445B8E742625B2AC00784BBC /* LaunchScreen.storyboard in Resources */,
 				445B8E712625B2AC00784BBC /* Assets.xcassets in Resources */,
-				445B8E6F2625B2A900784BBC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445B8E902625B44600784BBC /* Router.swift in Sources */,
+				445B8E8A2625B43400784BBC /* Presenter.swift in Sources */,
+				445B8E832625B42000784BBC /* View.swift in Sources */,
+				445B8E8D2625B43C00784BBC /* Entity.swift in Sources */,
 				445B8E6C2625B2A900784BBC /* ViewController.swift in Sources */,
+				445B8E872625B42800784BBC /* Interactor.swift in Sources */,
 				445B8E682625B2A900784BBC /* AppDelegate.swift in Sources */,
 				445B8E6A2625B2A900784BBC /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +202,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		445B8E6D2625B2A900784BBC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				445B8E6E2625B2A900784BBC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		445B8E722625B2AC00784BBC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
