@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+// Model simples poso (plain old Swift object lol)
+
+struct User: Codable {
+    let name: String
+}
